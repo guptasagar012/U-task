@@ -1,0 +1,40 @@
+<div class="col-xs-12 table">
+    <div ng-repeat="data in healthData">{{data.babyPrescription.dose}}
+      <div ng-repeat="value in data.givenMedincineDateTime">{{value.date}}
+        <div ng-repeat="x in value.time">{{x}}<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="col-xs-12 table">
+<table>
+  <tbody ng-repeat="data in healthData">
+    <tr ng-repeat="value in data.givenMedincineDateTime">
+    	<div ng-repeat="x in value.time">
+      <th>{{value.date}}</th>
+      <td>{{data.babyPrescription.dose}}</td>
+      <td>{{x}}</td>
+    </div>
+    </tr>
+    <td>{{data.babyPrescription.dose}}</td>
+    <tr ng-repeat="value in data.givenMedincineDateTime">
+      <td>{{value.date}}</td>
+    </tr>
+    <tr ng-repeat="x in value.time">
+      <td>{{x}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div ng-repeat="data in healthData">{{data.babyPrescription.dose}}
+      <div ng-repeat="value in data.givenMedincineDateTime">{{value.date}}
+        <div ng-repeat="x in value.time">{{x}}<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
